@@ -8,3 +8,16 @@
     --background: 250, 250, 250;
   }
 }
+/* Custom scrollbar styles (for webkit browsers) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* Optional: Custom scrollbar styles for other browsers */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+html {
+  scroll-behavior: smooth;
+}
