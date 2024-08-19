@@ -1,7 +1,8 @@
-"use client";
+"use client"
 import React, { useEffect, useRef, useState } from "react";
-import firstImage from "../public/Main-Image.png"
-
+import MainPage from "@/components/MainPage";
+import AboutPage from "@/components/AboutPage";
+import EndPage from "@/components/EndPage";
 
 export default function Home() {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -62,35 +63,17 @@ export default function Home() {
       <main
         ref={mainRef}
         className="flex overflow-x-hidden snap-x snap-mandatory w-screen h-screen overflow-y-hidden"
-        style={{ scrollBehavior: "smooth" }} 
+        style={{ scrollBehavior: "smooth" }}
       >
-        <div
-          className="w-screen h-screen snap-center flex-shrink-0"
-          style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(30, 29, 29, 0.4), rgba(26, 25, 25, 0.3), rgba(22, 21, 21, 0.2), rgba(18, 17, 17, 0.1)), url(${firstImage.src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        ></div>
-        <div
-          className="w-screen h-screen snap-center flex-shrink-0"
-          // style={{
-          //   backgroundImage: `linear-gradient(to bottom, rgba(30, 29, 29, 0.4), rgba(26, 25, 25, 0.3), rgba(22, 21, 21, 0.2), rgba(18, 17, 17, 0.1)), url(https://i.pinimg.com/236x/81/8b/96/818b9621947abf574bac25a2a969e8be.jpg)`,
-          //   backgroundSize: "cover",
-          //   backgroundPosition: "center",
-          //   backgroundRepeat: "no-repeat",
-          // }}
-        ></div>
-        <div
-          className="w-screen h-screen snap-center flex-shrink-0"
-          // style={{
-          //   backgroundImage: `linear-gradient(to bottom, rgba(30, 29, 29, 0.4), rgba(26, 25, 25, 0.3), rgba(22, 21, 21, 0.2), rgba(18, 17, 17, 0.1)), url(https://i.pinimg.com/236x/7b/98/f7/7b98f75f9ba9e541829b9f2fe07517f2.jpg)`,
-          //   backgroundSize: "cover",
-          //   backgroundPosition: "center",
-          //   backgroundRepeat: "no-repeat",
-          // }}
-        ></div>
+        <div className="w-screen h-screen snap-center flex-shrink-0">
+          <MainPage />
+        </div>
+        <div className="w-screen h-screen snap-center flex-shrink-0">
+          <AboutPage />
+        </div>
+        <div className="w-screen h-screen snap-center flex-shrink-0">
+          <EndPage />
+        </div>
       </main>
       {/* Left Arrow */}
       <button
