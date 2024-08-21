@@ -5,17 +5,17 @@ const EndPage = () => {
     <div className="w-screen h-screen flex justify-center items-start bg-[#333333] text-background overflow-y-auto">
       <div className="w-full max-w-7xl h-auto flex flex-col justify-start items-center p-8">
         {/* Main Heading */}
-        <h1 className="font-black text-4xl sm:text-5xl text-center mt-16">List of Projects</h1>
-        <h2 className="font-bold text-2xl sm:text-3xl text-center mt-6">
+        <h1 className="font-black text-4xl sm:text-3xl text-center mt-16">List of Projects</h1>
+        <h2 className="font-bold text-2xl sm:text-xl text-center mt-6">
           Projects completed during my work with Boutsen Design, Dahlgren Duck, private and corporate clients
         </h2>
 
-        <div className="flex flex-col sm:flex-row justify-center items-start gap-16 sm:gap-24 w-full mt-12">
+        <div className="flex flex-col sm:flex-row justify-center items-start gap-16 sm:gap-24 w-full mt-20">
           {/* First Column */}
           <div className="flex flex-col items-start text-left gap-8 sm:gap-12">
-            <h1 className="font-black text-2xl sm:text-3xl">Yachting</h1>
-            <h2 className="font-bold text-xl sm:text-2xl max-w-sm">Light Refit work, Interior Enhancement, Furniture & Loose Equipment Supply</h2>
-            <ul className="text-lg sm:text-xl font-medium space-y-2 sm:space-y-3 flex flex-col justify-start items-start text-left">
+            <h1 className="font-black text-2xl sm:text-2xl">Yachting</h1>
+            <h2 className="font-bold text-xl sm:text-xl max-w-sm">Light Refit work, Interior Enhancement, Furniture & Loose Equipment Supply</h2>
+            <ul className="text-base sm:text-lg font-medium space-y-2 sm:space-y-3 flex flex-col justify-start items-start text-left">
               <li>• MY SOUNDWAVE, 63m Benetti</li>
               <li>• MY JAGUAR, 56m Benetti</li>
               <li>• MY KHALIDAH, Amels 60-03</li>
@@ -40,8 +40,8 @@ const EndPage = () => {
 
           {/* Second Column */}
           <div className="flex flex-col items-start text-left gap-8 sm:gap-12">
-            <h1 className="font-black text-2xl sm:text-3xl">Residential & Commercial</h1>
-            <h2 className="font-bold text-xl sm:text-2xl">Furniture & Loose Equipment Supply</h2>
+            <h1 className="font-black text-2xl sm:text-2xl">Residential & Commercial</h1>
+            <h2 className="font-bold text-xl sm:text-xl">Furniture & Loose Equipment Supply</h2>
             <ul className="text-lg sm:text-xl font-medium space-y-2 sm:space-y-3 flex flex-col justify-start items-start text-left">
               <li>Private apartments in Monaco and Dubai</li>
               <li>Restaurant project in Dubai</li>
@@ -51,8 +51,8 @@ const EndPage = () => {
 
           {/* Third Column */}
           <div className="flex flex-col items-start text-center gap-8 sm:gap-12">
-            <h1 className="font-black text-2xl sm:text-3xl">Aviation</h1>
-            <h2 className="font-bold text-xl sm:text-2xl text-left">Loose Equipment Supply</h2>
+            <h1 className="font-black text-2xl sm:text-xl">Aviation</h1>
+            <h2 className="font-bold text-xl sm:text-xl text-left">Loose Equipment Supply</h2>
             <ul className="text-lg sm:text-xl font-medium space-y-2 sm:space-y-3 flex flex-col justify-start items-start text-left">
               <li>• A319CJ</li>
               <li>• A320</li>

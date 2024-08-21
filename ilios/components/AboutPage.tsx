@@ -5,7 +5,7 @@ import photo from "../public/BIO Image.jpg";
 const AboutPage = () => {
   return (
     <div className="w-screen h-screen snap-center flex-shrink-0 flex justify-center items-center">
-      <div className="w-screen rounded-full h-[75vh] flex justify-center items-center bg-[#333333] text-background">
+      <div className="w-screen  h-[75vh] flex justify-center items-center bg-[#333333] text-background">
         <div className="flex flex-col justify-center items-start">
           <h1 className=" font-black text-2xl pt-16 w-fit mt-16">
             Superyacht Interior Curator & Project Manager

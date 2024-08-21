@@ -8,7 +8,7 @@ const Navbar = () => {
         {/* Page content here */}
         <label
           htmlFor="my-drawer"
-          className="btn absolute text-background bg-[#0000006a] shadow-2xl top-8 left-8 btn-square btn-ghost drawer-button"
+          className="btn absolute text-background bg-[#0000006a] hover:bg-[#5555556a] hover:scale-110 shadow-2xl top-8 left-8 btn-square btn-ghost drawer-button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
