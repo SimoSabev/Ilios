@@ -1,17 +1,24 @@
 import React from "react";
 import Image from "next/image";
 import photo from "../public/BIO Image.jpg";
+import firstImage from "../public/PHOTO-2021-07-17-11-28-13.jpg"
 
 const AboutPage = () => {
   return (
-    <div className="w-screen h-screen snap-center flex-shrink-0 flex justify-center items-center">
-      <div className="w-screen  h-[75vh] flex justify-center items-center bg-[#333333] text-background">
-        <div className="flex flex-col justify-center items-start">
-          <h1 className=" font-black text-2xl pt-16 w-fit mt-16">
+    <div className="w-screen h-screen snap-center flex-shrink-0 flex justify-center items-center"
+    style={{
+      backgroundImage: `linear-gradient(to bottom, rgba(30, 29, 29, 0.4), rgba(26, 25, 25, 0.3), rgba(22, 21, 21, 0.2), rgba(18, 17, 17, 0.1)), url(${firstImage.src})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}>
+      <div className="w-[35vw] h-screen rounded-3xl flex justify-center items-start bg-[#fafafaab] text-foreground overflow-auto">
+        <div className="flex flex-col justify-center items-center">
+          <h1 className=" max-w-lg text-center font-bold text-2xl pt-16 w-fit mt-16">
             Superyacht Interior Curator & Project Manager
           </h1>
-          <div className=" flex justify-center items-center gap-24">
-            <p className=" max-w-2xl text-lg font-medium mb-16">
+          <div className=" flex flex-col justify-center items-center ">
+            <p className=" max-w-sm text-lg font-medium mb-16 order-2 text-justify">
               Founder of <span className="font-bold">ILIOS Décor</span>,
               curating bespoke styling for yachts and residences, Iliyana has
               the expertise to assist clients with their interior needs and
@@ -32,12 +39,12 @@ const AboutPage = () => {
               networking opportunities, connecting industry professionals and
               sharing her knowledge.
             </p>
-            <div className=" ">
+            <div className=" mt-16 order-1">
               <Image
-                className="rounded-full w-fit mb-16"
+                className="rounded-3xl w-fit mb-16"
                 src={photo.src}
                 alt="founder-icon"
-                width={500}
+                width={200}
                 height={450}
               ></Image>
             </div>

@@ -72,7 +72,8 @@ export default function Home() {
           <AboutPage />
         </div>
         <div className="w-screen h-screen snap-center flex-shrink-0">
-          <EndPage />
+          {/* Pass currentPage as a prop */}
+          <EndPage currentPage={currentPage} />
         </div>
       </main>
       {/* Left Arrow */}

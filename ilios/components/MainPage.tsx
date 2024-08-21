@@ -16,11 +16,11 @@ const MainPage = () => {
       <div className="absolute top-5 right-36">
         <Navbar />
       </div>
-      <div className=" w-[35vw] rounded-3xl h-screen flex flex-col justify-center items-center bg-[#fafafab2] text-foreground">
-        <div className=" flex flex-col justify-center items-start">
+      <div className=" w-[35vw] rounded-3xl h-screen flex flex-col justify-center items-center bg-[#fafafab2] text-foreground overflow-scroll">
+        <div className=" flex flex-col justify-center items-center">
         <h1 className=" font-bold text-2xl ">TRANSFORM SPACES </h1>
         <h1 className=" font-bold text-2xl py-5">CREATE DREAMS</h1>
-        <p className=" max-w-md text-lg font-medium text-left">
+        <p className=" max-w-md text-lg font-medium text-justify">
           ILIOS Décor is offering a comprehensive styling and interior
           refurbishment service to create the client’s dream environment on
           board and at home. Customized and detailed proposals are created,
@@ -29,6 +29,7 @@ const MainPage = () => {
           continuously offer not only the well-known luxury suppliers but also
           carefully sourced decorative objects and art pieces from the world’s
           finest artisans.
+
         </p>
         </div>
       </div>
