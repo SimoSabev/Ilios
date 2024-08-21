@@ -15,7 +15,7 @@ const AboutPage = () => {
       <div className="w-[35vw] h-screen rounded-3xl flex justify-center items-start bg-[#fafafaab] text-foreground overflow-auto">
         <div className="flex flex-col justify-center items-center">
           <h1 className=" max-w-lg text-center font-bold text-2xl pt-16 w-fit mt-16">
-            Superyacht Interior Curator & Project Manager
+           SuperYacht Interior Curator <br /> Project Manager 
           </h1>
           <div className=" flex flex-col justify-center items-center ">
             <p className=" max-w-sm text-lg font-medium mb-16 order-2 text-justify">
