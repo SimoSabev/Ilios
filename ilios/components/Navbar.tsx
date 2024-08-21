@@ -1,64 +1,63 @@
 import React from "react";
 
-
 const Navbar = () => {
   return (
-    <ul className="menu w-fit bg-background text-foreground rounded-box">
-      <li>
-        <a className="tooltip hover:bg-[#c9c9c9] tooltip-right" data-tip="Home">
+    <div className="drawer fixed">
+      <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content">
+        {/* Page content here */}
+        <label
+          htmlFor="my-drawer"
+          className="btn absolute text-background bg-[#0000006a] shadow-2xl top-8 left-8 btn-square btn-ghost drawer-button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="currentColor"
+            className="inline-block h-8 w-8 stroke-current"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-            />
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
           </svg>
-        </a>
-      </li>
-      <li>
-        <a className="tooltip hover:bg-[#c9c9c9] tooltip-right" data-tip="Details">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a className="tooltip hover:bg-[#c9c9c9] tooltip-right" data-tip="Stats">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-            />
-          </svg>
-        </a>
-      </li>
-    </ul>
+        </label>
+      </div>
+      <div className="drawer-side drawer-top">
+        <label
+          htmlFor="my-drawer"
+          aria-label="close sidebar"
+          className="drawer-overlay"
+        ></label>
+        <ul className="menu flex flex-row justify-around items-center bg-background text-foreground w-full p-4">
+          {/* Sidebar content */}
+          <li>
+            <div className="no-underline hover:no-underline hover:bg-transparent text-lg text-bold hover:text-inherit">
+              Decor designer
+            </div>
+          </li>
+          <li>
+            <div className="no-underline hover:no-underline text-2xl font-black hover:bg-transparent hover:text-inherit">
+              ILIOS
+            </div>
+          </li>
+          <li >
+            <div className="no-underline hover:no-underline hover:bg-transparent hover:text-inherit">
+              <ul className="flex flex-col justify-center items-start gap-2 text-base ">
+                <li className="no-underline hover:no-underline hover:bg-transparent hover:text-inherit">
+                  Email: iliyana@iliosdecor.com
+                </li>
+                <li className="no-underline  hover:no-underline hover:bg-transparent hover:text-inherit">
+                  Phone: +33660051391
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 };
 
