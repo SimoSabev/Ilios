@@ -1,80 +1,81 @@
-"use client"
-import React, { useEffect, useRef, useState } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import MainPage from "@/components/MainPage";
 import AboutPage from "@/components/AboutPage";
 import EndPage from "@/components/EndPage";
 
 export default function Home() {
-  const mainRef = useRef<HTMLDivElement>(null);
   const [currentPage, setCurrentPage] = useState(0);
+  const [direction, setDirection] = useState<"left" | "right">("right");
   const totalPages = 3; // Number of pages
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (!mainRef.current) return;
-
-      const { key } = event;
-      if (key === "ArrowRight" || key === "ArrowLeft") {
+      if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
         event.preventDefault();
-        let newPage = currentPage;
-
-        if (key === "ArrowRight") {
-          newPage = Math.min(currentPage + 1, totalPages - 1);
-        } else if (key === "ArrowLeft") {
-          newPage = Math.max(currentPage - 1, 0);
-        }
-
-        setCurrentPage(newPage);
-        scrollToPage(newPage);
+        setDirection(event.key === "ArrowRight" ? "right" : "left");
+        setCurrentPage(prevPage => {
+          if (event.key === "ArrowRight") {
+            return Math.min(prevPage + 1, totalPages - 1);
+          } else if (event.key === "ArrowLeft") {
+            return Math.max(prevPage - 1, 0);
+          }
+          return prevPage;
+        });
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [currentPage]);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   const handleArrowClick = (direction: "left" | "right") => {
-    let newPage = currentPage;
-
-    if (direction === "right") {
-      newPage = Math.min(currentPage + 1, totalPages - 1);
-    } else if (direction === "left") {
-      newPage = Math.max(currentPage - 1, 0);
-    }
-
-    setCurrentPage(newPage);
-    scrollToPage(newPage);
+    setDirection(direction);
+    setCurrentPage(prevPage => {
+      if (direction === "right") {
+        return Math.min(prevPage + 1, totalPages - 1);
+      } else if (direction === "left") {
+        return Math.max(prevPage - 1, 0);
+      }
+      return prevPage;
+    });
   };
 
-  const scrollToPage = (page: number) => {
-    if (mainRef.current) {
-      mainRef.current.scrollTo({
-        left: page * mainRef.current.clientWidth,
-        behavior: "smooth",
-      });
-    }
+  const pageVariants = {
+    initial: (direction: "left" | "right") => ({
+      x: direction === "right" ? 1000 : -1000,
+      opacity: 0,
+    }),
+    enter: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction: "left" | "right") => ({
+      x: direction === "right" ? -1000 : 1000,
+      opacity: 0,
+    }),
   };
 
   return (
-    <div className="relative w-screen h-screen">
-      <main
-        ref={mainRef}
-        className="flex overflow-x-hidden snap-x snap-mandatory w-screen h-screen overflow-y-hidden"
-        style={{ scrollBehavior: "smooth" }}
-      >
-        <div className="w-screen h-screen snap-center flex-shrink-0">
-          <MainPage />
-        </div>
-        <div className="w-screen h-screen snap-center flex-shrink-0">
-          <AboutPage />
-        </div>
-        <div className="w-screen h-screen snap-center flex-shrink-0">
-          {/* Pass currentPage as a prop */}
-          <EndPage currentPage={currentPage} />
-        </div>
+    <div className="relative w-screen h-screen overflow-hidden">
+      <main className="w-screen h-screen flex items-center justify-center">
+        <AnimatePresence mode="wait" custom={direction}>
+          <motion.div
+            key={currentPage}
+            custom={direction}
+            variants={pageVariants}
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            transition={{ type: "tween", ease: "easeInOut", duration: 0.5 }}
+            className="w-screen h-screen"
+          >
+            {currentPage === 0 && <MainPage />}
+            {currentPage === 1 && <AboutPage />}
+            {currentPage === 2 && <EndPage currentPage={currentPage} />}
+          </motion.div>
+        </AnimatePresence>
       </main>
       {/* Left Arrow */}
       <button
@@ -121,8 +122,8 @@ export default function Home() {
         {Array.from({ length: totalPages }).map((_, index) => (
           <span
             key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ease-in-out ${
-              index === currentPage ? "bg-white scale-125" : "bg-gray-500"
+            className={`w-2 h-2 rounded-full transition-all duration-300 ease-in-out ${
+              index === currentPage ? "bg-background scale-125" : "bg-slate-800"
             }`}
           ></span>
         ))}

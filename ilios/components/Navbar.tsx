@@ -25,6 +25,7 @@ const Navbar = () => {
           </svg>
         </label>
       </div>
+
       <div className="drawer-side drawer-top">
         <label
           htmlFor="my-drawer"

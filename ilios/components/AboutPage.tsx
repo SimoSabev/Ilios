@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import photo from "../public/BIO Image.jpg";
 import firstImage from "../public/PHOTO-2021-07-17-11-28-13.jpg"
+import Navbar from "./Navbar";
+
 
 const AboutPage = () => {
   return (
@@ -12,6 +14,10 @@ const AboutPage = () => {
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
     }}>
+
+<div className="absolute top-5 right-36">
+        <Navbar />
+      </div>
       <div className="w-[35vw] h-screen rounded-3xl flex justify-center items-start bg-[#fafafaab] text-foreground overflow-auto">
         <div className="flex flex-col justify-center items-center">
           <h1 className=" max-w-lg text-center font-bold text-2xl pt-16 w-fit mt-16">

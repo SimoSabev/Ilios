@@ -144,4 +144,3 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
 };
 
 export default EndPage;
-
