@@ -7,7 +7,7 @@
 
   export const metadata: Metadata = {
     title: "ILIOS",
-    description: "Website for yacht interiror design",
+    description: "Interior Project Management",
   };
 
   export default function RootLayout({

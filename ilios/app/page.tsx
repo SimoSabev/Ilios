@@ -8,7 +8,7 @@ import EndPage from "@/components/EndPage";
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(0);
   const [direction, setDirection] = useState<"left" | "right">("right");
-  const totalPages = 3; // Number of pages
+  const totalPages = 3;
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {

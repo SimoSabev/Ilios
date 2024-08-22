@@ -1,9 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../public/ico.jpg";
+import link1 from "../public/linkedin.png";
+import link2 from "../public/email.png";
+import link3 from "../public/telephone.png";
 
 interface NavbarProps {
-  className?: string; // Make className optional
+  className?: string;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ className }) => {
@@ -14,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         {/* Page content here */}
         <label
           htmlFor="my-drawer"
-          className="btn absolute text-background bg-[#0000006a] hover:bg-[#5555556a] hover:scale-110 shadow-2xl top-8 left-8 btn-square btn-ghost drawer-button"
+          className="btn absolute text-background bg-[#0000006a] shadow-2xl top-8 left-8 btn-square btn-ghost drawer-button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,35 +42,69 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu flex flex-row justify-around items-center bg-white round text-foreground w-full p-4">
+        <ul className="flex flex-row justify-around items-center  bg-white text-foreground w-full p-5">
           {/* Sidebar content */}
           <li>
-            <div className="no-underline hover:no-underline hover:bg-transparent text-lg text-bold hover:text-inherit">
-              Decor designer
+            <div className="w-fit flex flex-col justify-center items-center text-lg font-medium">
+              <h1 className="text-xl text-center flex flex-col justify-center items-center">
+                SuperYacht Interior Curator <br /> Project Manager
+                <div className= " h-1 w-1/4 bg-foreground rounded-full mt-4" />
+              </h1>
             </div>
           </li>
           <li>
-            <div className="no-underline hover:no-underline text-2xl font-black hover:bg-transparent hover:text-inherit">
+            <div className="text-2xl font-black">
               <Image
-                className="rounded-3xl w-fit"
+                className="rounded-3xl w-full"
                 src={logo.src}
                 alt="founder-icon"
-                width={130}
+                width={300}
                 height={100}
               />
             </div>
           </li>
           <li>
-            <div className="no-underline hover:no-underline hover:bg-transparent hover:text-inherit">
-              <ul className="flex flex-col justify-center items-start gap-2 text-base">
-                <li className="no-underline hover:no-underline hover:bg-transparent hover:text-inherit">
-                  Email: iliyana@iliosdecor.com
-                </li>
-                <li className="no-underline hover:no-underline hover:bg-transparent hover:text-inherit">
-                  Phone: +33660051391
-                </li>
-              </ul>
-            </div>
+            <ul className="flex flex-col justify-center items-start text-base ">
+              <li className=" p-2 rounded-xl bg-transparent hover:bg-[#cacaca]">
+                <Link
+                  href="http://linkedin.com/in/ilios"
+                  target="__blank"
+                  className="w-full "
+                >
+                  <div className="flex justify-start items-center gap-2">
+                    <Image
+                      src={link1.src}
+                      alt="linkedin-icon"
+                      width={30}
+                      height={30}
+                    />
+                    <p>Iliyana Popova</p>
+                  </div>
+                </Link>
+              </li>
+              <li className="p-2">
+                <div className="flex justify-start items-center gap-2">
+                  <Image
+                    src={link2.src}
+                    alt="email-icon"
+                    width={30}
+                    height={30}
+                  />
+                  <p>iliyana@iliosdecor.com</p>
+                </div>
+              </li>
+              <li className="p-2">
+                <div className="flex justify-start items-center gap-2">
+                  <Image
+                    src={link3.src}
+                    alt="telephone-icon"
+                    width={30}
+                    height={30}
+                  />
+                  <p>+33660051391</p>
+                </div>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

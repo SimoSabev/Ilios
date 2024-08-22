@@ -23,60 +23,54 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
 
       <div className="w-full max-w-5xl p-6 md:p-8 bg-[#fafafab2] rounded-3xl flex flex-col justify-start items-center text-foreground shadow-2xl space-y-6 md:space-y-0 overflow-auto">
         {/* Main content area */}
-        <div className="flex flex-col justify-center items-center text-center md:text-left w-full md:w-1/2 gap-12">
-          <h1 className="font-black text-xl sm:text-2xl lg:text-3xl my-12">
-            Yachting
+        <div className="flex flex-col justify-center items-center md:text-left w-full md:w-1/2 gap-12">
+          <h1 className="font-black text-xl sm:text-2xl lg:text-3xl mt-24">
+            Completed Projects
           </h1>
-          
-          <ul className="text-sm sm:text-base lg:text-lg font-semibold flex flex-col  justify-center items-start text-justify gap-6 md:gap-12">
-          <h2 className="font-bold text-lg sm:text-xl lg:text-2xl text-justify">
-            Light Refit work, Interior Enhancement, Furniture & Loose Equipment
-            Supply
-          </h2>
-           <div className=" font-normal">
+          <div className=" flex flex-col justify-center items-center gap-4">
+            <h1 className=" text-xl "> Projects completed during my work with Boutsen Desig, Dahlgren
+            Duck, private and corporate clients </h1>
+            <h2 className="font-bold text-xl sm:text-2xl mt-10 ">
+              Yachting
+            </h2>
+          </div>
+
+          <ul className="text-sm sm:text-base lg:text-lg font-semibold flex flex-col justify-center items-start text-justify gap-6">
+            <h2 className="font-medium text-lg sm:text-xl text-justify italic">
+              Light Refit work, Interior Enhancement, Furniture & Loose
+              Equipment Supply
+            </h2>
+            <div className=" font-normal">
               <li>• MY SOUNDWAVE, 63m Benetti</li>
-              <li>• MY JAGUAR, 56m Benetti</li>
               <li>• MY KHALIDAH, Amels 60-03</li>
               <li>• MY O’LION, 43m CRN</li>
-              <li>• MY ZEN, 88m New Build luxury yacht, Feadship (2021)</li>
+              <li>• MY ZEN, 88m Feadship</li>
             </div>
             <div className=" font-normal">
-              <li>• MY SHINKAI, 55m New Build explorer, Feadship (2021)</li>
-              <li>• MY PI, ex. SYZYGY, 77m New Build, Feadship (2019)</li>
-              <li>
-                • MY LUNA B, ex Natita, 66m Oceanco, built in 2005, refit works
-                in 2019
-              </li>
-              <li>
-                • MY NAUTILUS, ex. Grace E, 73m Perini Navi (2014), refit works
-                in 2018
-              </li>
-              <li>• MY OLOKUN, 50m New Build, Tankoa Yachts (2020)</li>
+              <li>• MY SHINKAI, 55m Feadship </li>
+              <li>• MY PI, ex. SYZYGY, 77m Feadship</li>
+              <li>• MY LUNA B, ex Natita, 66m Oceanco</li>
+              <li>• MY NAUTILUS, ex. Grace E, 73m Perini Navi</li>
             </div>
             <div className=" font-normal">
-              <li>
-                • MY STORMBORN, ex. Mon Plaisir, 47m, Heesen (2008), refit works
-              </li>
-              <li>
-                • MY LeLou, ex. La Belle Aire, 33m Feadship (1973), refit works
-                in 2018
-              </li>
-              <li>• MY EXUMA, 50m expedition vessel, Perini Navi (2010)</li>
-              <li>• MY GLADIATOR, 45m, Feadship (2010), refit works in 2018</li>
-              <li>• MY SONIC, Ferretti Custom Line Navetta 37m (2016)</li>
+              <li>• MY OLOKUN, 50m Tankoa Yachts</li>
+              <li>• MY STORMBORN, ex. Mon Plaisir, 47m, Heesen</li>
+              <li>• MY LeLou, ex. La Belle Aire, 33m Feadship</li>
+              <li>• MY EXUMA, 50m Perini Navi </li>
             </div>
             <div className=" font-normal">
-              <li>• MY TELLI, Feretti Custom Line Navetta 33m (2017)</li>
+              <li>• MY GLADIATOR, 45m Feadship</li>
+              <li>• MY SONIC, 37m Custom Line Navetta</li>
               <li>• MY BARTALY (ex-GENESI), 47m, Wider shipyard (2016)</li>
               <li>• MY BABBO, 31m explorer, Cantiere delle Marche (2016)</li>
-              <li>• MY KALIENTE, Dominator Illumen, 28m (2018)</li>
             </div>
           </ul>
-          <div className=" w-full flex flex-col justify-center items-start">
-            <h1 className="font-bold text-lg sm:text-xl lg:text-2xl mb-4 text-center">
+          <div className=" w-full flex flex-col justify-center items-center">
+            <h1 className="font-bold text-lg sm:text-xl lg:text-2xl mb-4 text-center ">
               Residential & Commercial
             </h1>
-            <h2 className="font-medium text-base sm:text-lg lg:text-xl mb-4 text-center">
+            <div className=" w-full flex flex-col justify-start items-start mt-10">
+            <h2 className="font-medium text-base sm:text-lg lg:text-xl mb-4 italic text-center">
               Furniture & Loose Equipment Supply
             </h2>
             <ul className="text-base sm:text-lg lg:text-xl font-normal list-disc list-inside space-y-2 text-justify">
@@ -84,12 +78,14 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
               <li>Restaurant project in Dubai</li>
               <li>Villas in Ibiza and French Riviera</li>
             </ul>
+            </div>
           </div>
-          <div className=" w-full flex flex-col justify-center items-start">
-            <h1 className="font-bold text-lg  sm:text-xl lg:text-2xl mb-4 text-center">
+          <div className=" w-full flex flex-col justify-center items-center">
+            <h1 className="font-bold text-lg  sm:text-xl lg:text-2xl text-center">
               Aviation
             </h1>
-            <h2 className="font-medium text-base sm:text-lg lg:text-xl mb-4 text-center">
+            <div className=" w-full flex flex-col justify-center items-start">
+            <h2 className="font-medium text-base sm:text-lg lg:text-xl italic mb-4 mt-10 text-center">
               Loose Equipment Supply
             </h2>
             <ul className="text-base sm:text-lg lg:text-xl font-нормал list-disc list-inside space-y-2 text-justify">
@@ -109,12 +105,9 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
                   <li>Global 5000</li>
                   <li>Global 6000</li>
                 </div>
-                <div>
-                  <li>Falcon 900</li>
-                  <li>G550</li>
-                </div>
               </div>
             </ul>
+            </div>
           </div>
         </div>
       </div>
