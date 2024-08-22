@@ -1,8 +1,14 @@
 import React from "react";
+import Image from "next/image";
+import logo from "../public/ico.jpg";
 
-const Navbar = () => {
+interface NavbarProps {
+  className?: string; // Make className optional
+}
+
+const Navbar: React.FC<NavbarProps> = ({ className }) => {
   return (
-    <div className="drawer fixed">
+    <div className={`drawer fixed ${className}`}>
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Page content here */}
@@ -32,7 +38,7 @@ const Navbar = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu flex flex-row justify-around items-center bg-background text-foreground w-full p-4">
+        <ul className="menu flex flex-row justify-around items-center bg-white round text-foreground w-full p-4">
           {/* Sidebar content */}
           <li>
             <div className="no-underline hover:no-underline hover:bg-transparent text-lg text-bold hover:text-inherit">
@@ -41,16 +47,22 @@ const Navbar = () => {
           </li>
           <li>
             <div className="no-underline hover:no-underline text-2xl font-black hover:bg-transparent hover:text-inherit">
-              ILIOS
+              <Image
+                className="rounded-3xl w-fit"
+                src={logo.src}
+                alt="founder-icon"
+                width={130}
+                height={100}
+              />
             </div>
           </li>
-          <li >
+          <li>
             <div className="no-underline hover:no-underline hover:bg-transparent hover:text-inherit">
-              <ul className="flex flex-col justify-center items-start gap-2 text-base ">
+              <ul className="flex flex-col justify-center items-start gap-2 text-base">
                 <li className="no-underline hover:no-underline hover:bg-transparent hover:text-inherit">
                   Email: iliyana@iliosdecor.com
                 </li>
-                <li className="no-underline  hover:no-underline hover:bg-transparent hover:text-inherit">
+                <li className="no-underline hover:no-underline hover:bg-transparent hover:text-inherit">
                   Phone: +33660051391
                 </li>
               </ul>

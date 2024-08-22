@@ -123,7 +123,7 @@ export default function Home() {
           <span
             key={index}
             className={`w-2 h-2 rounded-full transition-all duration-300 ease-in-out ${
-              index === currentPage ? "bg-background scale-125" : "bg-slate-800"
+              index === currentPage ? "bg-background scale-125" : "bg-slate-800 opacity-50"
             }`}
           ></span>
         ))}
