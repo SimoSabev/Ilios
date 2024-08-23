@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         {/* Page content here */}
         <label
           htmlFor="my-drawer"
-          className="btn absolute text-background bg-[#0000006a] shadow-2xl top-8 left-12 btn-square btn-ghost drawer-button"
+          className="btn absolute text-background bg-[#0000006a] shadow-2xl top-8 left-4 sm:left-8 btn-square btn-ghost drawer-button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,20 +42,23 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="flex flex-row justify-around items-center  bg-white text-foreground w-full p-5">
+        <ul className="flex flex-col sm:flex-row justify-center md:justify-around items-center bg-white text-foreground w-full p-4 sm:p-5 space-y-4 sm:space-y-0">
           {/* Sidebar content */}
-          <li>
-            <div className="w-fit flex flex-col justify-center items-center text-lg font-medium">
-              <h1 className="text-xl text-center flex flex-col justify-center items-center">
-                SuperYacht Interior Curator <br /> Project Manager
-                <div className= " h-1 w-1/4 bg-foreground rounded-full mt-4" />
+          <li className="text-center">
+            <div className="flex flex-col justify-center items-center text-lg font-medium">
+              <div className=" flex flex-col justify-center items-center">
+              <h1 className="text-lg sm:text-xl">
+                SuperYacht Interior Curator <br className="hidden sm:block" /> Project Manager
               </h1>
+              <div className="h-1 w-1/4 bg-foreground rounded-full mt-4" />
+              </div>
+              
             </div>
           </li>
-          <li>
-            <div className="text-2xl font-black">
+          <li className="text-center">
+            <div className="text-xl sm:text-2xl font-black">
               <Image
-                className="rounded-3xl w-full"
+                className="rounded-3xl"
                 src={logo.src}
                 alt="founder-icon"
                 width={200}
@@ -64,12 +67,12 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
             </div>
           </li>
           <li>
-            <ul className="flex flex-col justify-center items-start text-base ">
-              <li className=" p-3 rounded-xl bg-transparent hover:bg-[#cacaca]">
+            <ul className="flex flex-col justify-center items-start text-base space-y-2 sm:space-y-2 ">
+              <li className="p-2 sm:p-3 rounded-xl bg-transparent hover:bg-[#cacaca] ">
                 <Link
                   href="http://linkedin.com/in/ilios"
                   target="__blank"
-                  className="w-full "
+                  className="w-full"
                 >
                   <div className="flex justify-start items-center gap-2">
                     <Image
@@ -82,7 +85,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   </div>
                 </Link>
               </li>
-              <li className="p-3">
+              <li className="p-2 sm:p-3">
                 <div className="flex justify-start items-center gap-2">
                   <Image
                     src={link2.src}
@@ -93,7 +96,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   <p>iliyana@iliosdecor.com</p>
                 </div>
               </li>
-              <li className="p-3">
+              <li className="p-2 sm:p-3">
                 <div className="flex justify-start items-center gap-2">
                   <Image
                     src={link3.src}
