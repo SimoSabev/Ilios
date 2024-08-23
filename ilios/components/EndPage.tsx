@@ -21,7 +21,7 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
         </div>
       )}
 
-      <div className="w-full max-w-5xl p-6 md:p-8 bg-[#fafafab2] rounded-3xl flex flex-col justify-start items-center text-foreground shadow-2xl space-y-6 md:space-y-0 overflow-auto">
+      <div className="w-fit max-w-5xl bg-[#fafafab2] rounded-3xl flex flex-col justify-start items-center text-foreground shadow-2xl overflow-auto">
         {/* Main content area */}
         <div className="flex flex-col justify-center items-center md:text-left w-full md:w-1/2 gap-12">
           <h1 className="font-black text-xl sm:text-2xl lg:text-3xl mt-24">
@@ -35,7 +35,7 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
             </h2>
           </div>
 
-          <ul className="text-sm sm:text-base lg:text-lg font-semibold flex flex-col justify-center items-start text-justify gap-6">
+          <ul className=" text-sm sm:text-base lg:text-lg font-semibold flex flex-col justify-center items-start text-justify gap-6">
             <h2 className="font-medium text-lg sm:text-xl text-justify italic">
               Light Refit work, Interior Enhancement, Furniture & Loose
               Equipment Supply

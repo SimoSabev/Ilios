@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/ico.jpg";
+import logo from "../public/logo1.jpg";
 import link1 from "../public/linkedin.png";
 import link2 from "../public/email.png";
 import link3 from "../public/telephone.png";
@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         {/* Page content here */}
         <label
           htmlFor="my-drawer"
-          className="btn absolute text-background bg-[#0000006a] shadow-2xl top-8 left-8 btn-square btn-ghost drawer-button"
+          className="btn absolute text-background bg-[#0000006a] shadow-2xl top-8 left-12 btn-square btn-ghost drawer-button"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -58,14 +58,14 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                 className="rounded-3xl w-full"
                 src={logo.src}
                 alt="founder-icon"
-                width={300}
+                width={200}
                 height={100}
               />
             </div>
           </li>
           <li>
             <ul className="flex flex-col justify-center items-start text-base ">
-              <li className=" p-2 rounded-xl bg-transparent hover:bg-[#cacaca]">
+              <li className=" p-3 rounded-xl bg-transparent hover:bg-[#cacaca]">
                 <Link
                   href="http://linkedin.com/in/ilios"
                   target="__blank"
@@ -82,7 +82,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   </div>
                 </Link>
               </li>
-              <li className="p-2">
+              <li className="p-3">
                 <div className="flex justify-start items-center gap-2">
                   <Image
                     src={link2.src}
@@ -93,7 +93,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   <p>iliyana@iliosdecor.com</p>
                 </div>
               </li>
-              <li className="p-2">
+              <li className="p-3">
                 <div className="flex justify-start items-center gap-2">
                   <Image
                     src={link3.src}
