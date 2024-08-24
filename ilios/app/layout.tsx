@@ -20,7 +20,7 @@
       <head>
         <link rel="icon" href={logo.src} />
       </head>
-        <body className={` ${raleway.className} bg-background overflow-x-hidden  `}>
+        <body className={` ${raleway.className} bg-background text-foreground overflow-x-hidden  `}>
           {children}
         </body>
       </html>

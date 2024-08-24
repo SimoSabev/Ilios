@@ -21,7 +21,7 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
         </div>
       )}
 
-      <div className="w-fit max-w-5xl bg-[#fafafab2] rounded-3xl flex flex-col justify-start items-center text-foreground shadow-2xl overflow-auto">
+      <div className="w-fit max-w-5xl bg-[#fafafab2]  rounded-3xl flex flex-col justify-start items-center text-foreground shadow-2xl overflow-auto">
         {/* Main content area */}
         <div className="flex flex-col justify-center items-center md:text-left w-full md:w-1/2 gap-12">
           <h1 className="font-black text-xl sm:text-2xl lg:text-3xl mt-24">
@@ -114,5 +114,4 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
     </div>
   );
 };
-
 export default EndPage;

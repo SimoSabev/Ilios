@@ -15,7 +15,7 @@ const AboutPage: React.FC = () => {
       <div className="absolute top-5 right-32 z-20">
         <Navbar />
       </div>
-      <div className=" md:absolute md:left-0 w-fit h-screen max-w-4xl p-4 md:p-12 bg-[#fafafaab] rounded-3xl flex flex-col md:flex-row justify-center items-start text-foreground overflow-hidden">
+      <div className=" md:absolute md:left-0 w-fit h-screen max-w-4xl p-4 md:p-12 bg-[#fafafaab] rounded-3xl flex flex-col md:flex-row justify-center items-start text-foreground overflow-auto">
         <div className="flex flex-col justify-end mt-40 items-center md:items-center text-center md:text-left w-full max-w-lg">
           <div className="flex justify-center">
             <Image
