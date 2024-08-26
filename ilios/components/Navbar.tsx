@@ -150,7 +150,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   <Image
                     src={link1.src}
                     alt="linkedin-icon"
-                    width={30}
+                    width={15}
                     height={30}
                   />
                   <p>Iliyana Popova</p>
@@ -162,7 +162,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                 <Image
                   src={link2.src}
                   alt="email-icon"
-                  width={30}
+                  width={15}
                   height={30}
                 />
                 <p>iliyana@iliosdecor.com</p>
@@ -173,7 +173,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                 <Image
                   src={link3.src}
                   alt="telephone-icon"
-                  width={30}
+                  width={15}
                   height={30}
                 />
                 <p>+33660051391</p>
