@@ -35,7 +35,7 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
           </div>
 
           <ul className=" text-sm sm:text-base lg:text-lg font-semibold flex flex-col justify-center items-center text-center gap-6">
-            <div className="h-1 w-1/4 bg-foreground rounded-full mt-4" />
+            <div className="h-8 w-1/4 bg-foreground rounded-full mt-5" />
             <h2 className="font-bold text-xl sm:text-2xl mt-6 ">Yachting</h2>
             <h2 className=" max-w-2xl h-full px-36 font-medium text-lg sm:text-xl text-center italic">
               Light Refit work, Interior Enhancement, Furniture & Loose
