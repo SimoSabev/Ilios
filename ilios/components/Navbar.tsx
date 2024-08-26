@@ -124,8 +124,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           <div className="flex flex-col justify-center items-center text-lg font-medium">
             <div className="flex flex-col justify-center items-center">
               <h1 className="text-lg ">
-                SuperYacht Interior Curator
-                Project Manager
+                SuperYacht Interior Curator Project Manager
               </h1>
               <div className="h-1 w-1/4 bg-foreground rounded-full mt-4" />
             </div>
@@ -144,7 +143,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         </li>
         <li>
           <ul className="flex flex-col  justify-center items-start text-base space-y-2 sm:space-y-0">
-            <li className="p-1 rounded-xl bg-transparent hover:bg-[#cacaca]">
+            <li className="p-1 rounded-xl bg-transparent hover:underline">
               <Link href="http://linkedin.com/in/ilios" target="__blank">
                 <div className="flex justify-start items-center gap-2">
                   <Image
@@ -157,6 +156,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                 </div>
               </Link>
             </li>
+
             <li className="p-1">
               <div className="flex justify-start items-center gap-2">
                 <Image
@@ -165,9 +165,10 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   width={15}
                   height={30}
                 />
-                <p>iliyana@iliosdecor.com</p>
+                  iliyana@iliosdecor.com
               </div>
             </li>
+
             <li className="p-1">
               <div className="flex justify-start items-center gap-2">
                 <Image

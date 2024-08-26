@@ -15,7 +15,7 @@ const AboutPage: React.FC = () => {
       <div className="absolute top-5 right-32 z-20">
         <Navbar />
       </div>
-      <div className=" md:absolute md:left-0 w-fit h-screen max-w-4xl p-4 md:p-12 bg-[#fafafaab] rounded-3xl flex flex-col md:flex-row justify-center items-start text-foreground overflow-hidden">
+      <div className=" md:absolute md:left-0 w-fit h-screen max-w-4xl p-4 md:p-12 bg-[#fafafaab] rounded-3xl flex flex-col md:flex-row justify-center items-start text-foreground overflow-auto">
         <div className="flex flex-col justify-end mt-32 items-center md:items-center text-center md:text-left w-full max-w-lg">
           <div className="flex justify-center">
             <Image
@@ -30,7 +30,7 @@ const AboutPage: React.FC = () => {
             Iliyana Popova
           </h1>
 
-          <p className=" px-4 text-sm md:text-base font-medium max-w-full md:max-w-xl mx-auto text-justify">
+          <p className="px-4 text-xs sm:text-sm md:text-base font-medium max-w-full max-h-fit sm:max-h-full md:max-w-xl mx-auto my-auto text-justify leading-relaxed">
             Founder of <span className="font-bold">ILIOS Décor</span>, curating
             bespoke styling for yachts and residences, Iliyana has the expertise
             to assist clients with their interior needs and offer personalized
