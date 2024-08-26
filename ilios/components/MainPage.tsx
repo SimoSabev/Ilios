@@ -14,7 +14,7 @@ const MainPage: React.FC = () => {
       <div className="absolute top-5 right-32 z-20">
         <Navbar />
       </div>
-      <div className=" md:absolute md:right-0 w-fit  h-screen max-w-3xl md:max-w-4xl lg:max-w-5xl p-4 md:p-8 bg-[#fafafab2] rounded-3xl flex flex-col justify-center items-center text-foreground overflow-hidden">
+      <div className=" md:absolute md:right-0 w-fit h-screen max-w-3xl md:max-w-4xl lg:max-w-5xl p-4 md:p-8 bg-[#fafafab2] rounded-3xl flex flex-col justify-center items-center text-foreground overflow-hidden mt-16">
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className="font-bold text-2xl md:text-2xl lg:text-3xl">TRANSFORM SPACES</h1>
           <h1 className="font-bold text-xl md:text-2xl lg:text-3xl py-3 md:py-5 mb-3">CREATE DREAMS</h1>
