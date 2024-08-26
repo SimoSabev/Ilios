@@ -27,18 +27,17 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
           <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl mt-32 sm:mt-56">
             Completed Projects
           </h1>
-          <div className=" flex flex-col justify-center items-center gap-4 max-w-xl text-center">
-            <h1 className=" text-xl ">
-              {" "}
+          <div className="flex flex-col justify-center items-center gap-4 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 w-full">
+            <h1 className="max-w-5xl h-full px-36 font-medium text-lg sm:text-xl text-center">
               Projects completed during my work with Boutsen Design, Dahlgren
-              Duck, private and corporate clients{" "}
+              Duck, private and corporate clients
             </h1>
           </div>
 
           <ul className=" text-sm sm:text-base lg:text-lg font-semibold flex flex-col justify-center items-center text-center gap-6">
             <div className="h-1 w-1/4 bg-foreground rounded-full mt-4" />
             <h2 className="font-bold text-xl sm:text-2xl mt-6 ">Yachting</h2>
-            <h2 className=" max-w-2xl px-36 font-medium text-lg sm:text-xl text-center  italic">
+            <h2 className=" max-w-2xl h-full px-36 font-medium text-lg sm:text-xl text-center italic">
               Light Refit work, Interior Enhancement, Furniture & Loose
               Equipment Supply
             </h2>
