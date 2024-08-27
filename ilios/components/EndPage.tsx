@@ -62,8 +62,8 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
             <div className=" font-normal">
               <li> MY GLADIATOR, 45m Feadship</li>
               <li> MY SONIC, 37m Custom Line Navetta</li>
-              <li> MY BARTALY (ex-GENESI), 47m, Wider shipyard (2016)</li>
-              <li> MY BABBO, 31m explorer, Cantiere delle Marche (2016)</li>
+              <li> MY BARTALY (ex-GENESI), 47m, Wider shipyard</li>
+              <li> MY BABBO, 31m explorer, Cantiere delle Marche</li>
             </div>
           </ul>
           <div className="h-1 w-1/4 bg-foreground rounded-full mt-4" />

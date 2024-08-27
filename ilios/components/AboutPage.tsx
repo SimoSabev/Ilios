@@ -30,7 +30,7 @@ const AboutPage: React.FC = () => {
             Iliyana Popova
           </h1>
 
-          <p className="px-4 text-sm sm:text-base md:text-lg font-medium max-w-full max-h-fit sm:max-h-full md:max-w-xl mx-auto my-auto text-justify leading-relaxed">
+          <p className="px-4 text-lg md:text-base lg:text-lg font-medium max-w-full max-h-fit sm:max-h-full md:max-w-xl mx-auto my-auto text-justify leading-relaxed">
             Founder of <span className="font-bold">ILIOS Décor</span>, curating
             bespoke styling for yachts and residences, Iliyana has the expertise
             to assist clients with their interior needs and offer personalized
