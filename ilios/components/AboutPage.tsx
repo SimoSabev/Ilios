@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
               className="rounded-3xl w-full max-w-xs md:max-w-md lg:max-w-lg mb-4"
               src={photo.src}
               alt="founder-icon"
-              width={200}
+              width={150}
               height={450}
             />
           </div>
@@ -30,7 +30,7 @@ const AboutPage: React.FC = () => {
             Iliyana Popova
           </h1>
 
-          <p className="px-4 text-xs sm:text-sm md:text-base font-medium max-w-full max-h-fit sm:max-h-full md:max-w-xl mx-auto my-auto text-justify leading-relaxed">
+          <p className="px-4 text-sm sm:text-base md:text-lg font-medium max-w-full max-h-fit sm:max-h-full md:max-w-xl mx-auto my-auto text-justify leading-relaxed">
             Founder of <span className="font-bold">ILIOS Décor</span>, curating
             bespoke styling for yachts and residences, Iliyana has the expertise
             to assist clients with their interior needs and offer personalized

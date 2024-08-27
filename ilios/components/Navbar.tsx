@@ -75,38 +75,38 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
               </div>
             </li> */}
             <li>
-              <ul className="flex flex-col justify-center items-start text-base space-y-2">
-                <li className="p-2 rounded-xl bg-transparent hover:bg-[#cacaca]">
+              <ul className="flex flex-col justify-center items-start text-base">
+                <li className="p-1 rounded-xl bg-transparent hover:bg-[#cacaca]">
                   <Link href="http://linkedin.com/in/ilios" target="__blank">
                     <div className="flex justify-start items-center gap-2">
                       <Image
                         src={link1.src}
                         alt="linkedin-icon"
-                        width={30}
-                        height={30}
+                        width={15}
+                        height={15}
                       />
                       <p>Iliyana Popova</p>
                     </div>
                   </Link>
                 </li>
-                <li className="p-2">
+                <li className="p-1">
                   <div className="flex justify-start items-center gap-2">
                     <Image
                       src={link2.src}
                       alt="email-icon"
-                      width={30}
-                      height={30}
+                      width={15}
+                      height={15}
                     />
                     <p>iliyana@iliosdecor.com</p>
                   </div>
                 </li>
-                <li className="p-2">
+                <li className="p-1">
                   <div className="flex justify-start items-center gap-2">
                     <Image
                       src={link3.src}
                       alt="telephone-icon"
-                      width={30}
-                      height={30}
+                      width={15}
+                      height={15}
                     />
                     <p>+33660051391</p>
                   </div>
@@ -123,10 +123,10 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         <li className="text-center">
           <div className="flex flex-col justify-center items-center text-lg font-medium">
             <div className="flex flex-col justify-center items-center">
-              <h1 className="text-lg ">
+              <h1 className="text-lg max-w-[36vw]  md:max-w-[30vw] lg:max-w-[20vw] xl:max-w-[16vw] ">
                 SuperYacht Interior Curator Project Manager
               </h1>
-              <div className="h-1 w-1/4 bg-foreground rounded-full mt-4" />
+              <div className="h-1 w-1/3 bg-foreground rounded-full mt-2" />
             </div>
           </div>
         </li>
@@ -150,7 +150,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                     src={link1.src}
                     alt="linkedin-icon"
                     width={15}
-                    height={30}
+                    height={15}
                   />
                   <p>Iliyana Popova</p>
                 </div>
@@ -163,7 +163,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   src={link2.src}
                   alt="email-icon"
                   width={15}
-                  height={30}
+                  height={15}
                 />
                   iliyana@iliosdecor.com
               </div>
@@ -175,7 +175,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   src={link3.src}
                   alt="telephone-icon"
                   width={15}
-                  height={30}
+                  height={15}
                 />
                 <p>+33660051391</p>
               </div>

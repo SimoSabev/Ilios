@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import favicon from "../public/ico.jpg";
-import ogImage from "../public/ico.jpg"; // Path to your Open Graph image
+import ogImage from "../public/logo1.jpg"; // Path to your Open Graph image
 
 const raleway = Raleway({ subsets: ["latin"] });
 
