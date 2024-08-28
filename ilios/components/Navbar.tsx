@@ -123,9 +123,12 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         <li className="text-center">
           <div className="flex flex-col justify-center items-center text-lg font-medium">
             <div className="flex flex-col justify-center items-center">
-              <h1 className="text-lg max-w-[36vw]  md:max-w-[30vw] lg:max-w-[20vw] xl:max-w-[16vw] ">
-                SuperYacht Interior Curator Project Manager
+              <h1 className="text-lg ">
+                SuperYacht Interior Curator
+                <br />
+                Project Manager
               </h1>
+
               <div className="h-1 w-1/3 bg-foreground rounded-full mt-2" />
             </div>
           </div>
@@ -165,7 +168,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   width={15}
                   height={15}
                 />
-                  iliyana@iliosdecor.com
+                iliyana@iliosdecor.com
               </div>
             </li>
 
