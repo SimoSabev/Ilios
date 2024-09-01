@@ -31,7 +31,7 @@ const AboutPage: React.FC = () => {
           </h1>
 
           <p className="px-4 text-lg md:text-base lg:text-lg font-medium max-w-full max-h-fit sm:max-h-full md:max-w-xl mx-auto my-auto text-justify leading-relaxed">
-            My name is Iliyana, and I founded ILIOS Décor with a simple yet
+            I founded ILIOS Décor with a simple yet
             profound mission: to blend my passion for excellence with my
             dedication to creating exceptional spaces that truly resonate with
             the people who live in them. My vocation is to help clients discover
