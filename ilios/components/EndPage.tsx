@@ -72,7 +72,7 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
               Residential & Commercial
             </h1>
             <div className=" w-full flex flex-col justify-start items-center ">
-              <h2 className="font-medium text-base sm:text-lg lg:text-xl mb-4 italic text-center">
+              <h2 className="h-full px-20 sm:px-0 font-medium mb-4 mt-2 text-center text-sm md:text-base lg:text-lg xl:text-xl leading-tight tracking-tight max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
                 Furniture & Loose Equipment Supply
               </h2>
               <ul className="text-base sm:text-lg lg:text-xl font-normal list-disc list-inside space-y-2 text-center">
@@ -88,7 +88,7 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
               Aviation
             </h1>
             <div className=" w-full flex flex-col justify-center items-center">
-              <h2 className="font-medium text-base sm:text-lg lg:text-xl italic mb-4 mt-2 text-center">
+              <h2 className="h-full px-20 sm:px-0 font-medium text-center text-sm md:text-base lg:text-lg xl:text-xl leading-tight tracking-tight max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto mb-4 mt-2">
                 Loose Equipment Supply
               </h2>
               <ul className="text-sm sm:text-base md:text-lg lg:text-xl font-normal list-disc list-inside space-y-2 text-center h-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
