@@ -31,21 +31,23 @@ const AboutPage: React.FC = () => {
           </h1>
 
           <p className="px-4 text-lg md:text-base lg:text-lg font-medium max-w-full max-h-fit sm:max-h-full md:max-w-xl mx-auto my-auto text-justify leading-relaxed">
-            Founder of <span className="font-bold">ILIOS Décor</span>, curating
-            bespoke styling for yachts and residences, Iliyana has the expertise
-            to assist clients with their interior needs and offer personalized
-            styling solutions. With over 20 years of experience working in the
-            luxury industry and managing highly confidential projects, she has a
-            strong focus on service excellence, creating aesthetically pleasing
-            and functional environments. Through her multiple years of
-            experience as a Project Manager at an Interior Design company in
-            Monaco and as part of the Owners Team of two truly outstanding
-            superyachts, MY A and SY A, Iliyana had the opportunity to be
-            closely involved with various aspects of creating, maintaining and
-            refurbishing the interior of numerous luxury vessels. Iliyana offers
-            an expertise in sourcing of materials, selection of furniture and
-            accessories, interior set-up, refit works, planning, budgeting,
-            quality control, and logistics.
+            My name is Iliyana, and I founded ILIOS Décor with a simple yet
+            profound mission: to blend my passion for excellence with my
+            dedication to creating exceptional spaces that truly resonate with
+            the people who live in them. My vocation is to help clients discover
+            personalized styling solutions that beautifully reflect their unique
+            tastes while ensuring their spaces are both functional and inviting.
+            From my time as a Project Manager at an Interior Design company in
+            Monaco to my experience as part of the Owners Team for the iconic
+            superyachts, MY A and SY A, I have had the privilege of working on
+            high-profile projects while gaining a deep understanding of the
+            intricacies of interior decor. Whether it&apos;s sourcing the finest
+            materials, selecting the perfect furniture, or managing complex
+            refits, I approach each project with care, attention to detail, and
+            a commitment to service excellence. Let&apos;s create something
+            beautiful together and transform your yacht, residence or aircraft
+            into a space that feels like home - elegant, comfortable, and
+            uniquely yours.
           </p>
         </div>
       </div>

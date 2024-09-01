@@ -9,11 +9,19 @@ const raleway = Raleway({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "ILIOS",
   description: "Interior Project Management",
+  metadataBase: new URL("https://www.iliosdecor.com"), // Add this line
   openGraph: {
     title: "ILIOS",
     description: "Interior Project Management",
-    images: [ogImage.src],
+    images: "/logo1.jpg",
     url: "https://www.iliosdecor.com",
+  },
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+      'de-DE': '/de-DE',
+    },
   },
 };
 
