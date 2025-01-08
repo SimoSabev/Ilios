@@ -121,26 +121,41 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
       <ul className="hidden sm:flex flex-row justify-center md:justify-around items-center text-foreground w-full p-4 sm:p-5 space-y-4 sm:space-y-0">
         {/* Navbar content */}
         <li className="text-center">
-          <div className="flex flex-col justify-center items-center text-lg font-medium">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className="text-lg ">
-                SuperYacht Interior Curator
-                <br />
-                Project Manager
-              </h1>
+          {/*<div className="flex flex-col justify-center items-center text-lg font-medium">*/}
+          {/*  <div className="flex flex-col justify-center items-center">*/}
+          {/*    <h1 className="text-sm">*/}
+          {/*      Interior Curation & Styling*/}
+          {/*      <br/>*/}
+          {/*      Project Management*/}
+          {/*      <br/>*/}
+          {/*      Interior Refit Support*/}
+          {/*    </h1>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
+          <ul className="flex flex-col  justify-center items-start text-base space-y-2 sm:space-y-0">
+            <li className="p-1 rounded-xl bg-transparent hover:underline">
 
-              <div className="h-1 w-1/3 bg-foreground rounded-full mt-2" />
-            </div>
-          </div>
+              <p>Interior Curation & Styling</p>
+            </li>
+
+            <li className="p-1 rounded-xl bg-transparent hover:underline">
+
+              <p>Project Management</p>
+            </li>
+            <li className="p-1 rounded-xl bg-transparent hover:underline">
+
+              <p>Interior Refit Support</p>
+            </li>
+          </ul>
         </li>
         <li className="text-center">
           <div className="text-xl sm:text-2xl font-black">
             <Image
-              className="rounded-3xl"
-              src={logo.src}
-              alt="founder-icon"
-              width={250}
-              height={100}
+                className="rounded-3xl"
+                src={logo.src}
+                alt="founder-icon"
+                width={250}
+                height={100}
             />
           </div>
         </li>
@@ -150,10 +165,10 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
               <Link href="http://linkedin.com/in/ilios" target="__blank">
                 <div className="flex justify-start items-center gap-2">
                   <Image
-                    src={link1.src}
-                    alt="linkedin-icon"
-                    width={15}
-                    height={15}
+                      src={link1.src}
+                      alt="linkedin-icon"
+                      width={15}
+                      height={15}
                   />
                   <p>Iliyana Popova</p>
                 </div>
@@ -163,10 +178,10 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
             <li className="p-1">
               <div className="flex justify-start items-center gap-2">
                 <Image
-                  src={link2.src}
-                  alt="email-icon"
-                  width={15}
-                  height={15}
+                    src={link2.src}
+                    alt="email-icon"
+                    width={15}
+                    height={15}
                 />
                 iliyana@iliosdecor.com
               </div>
