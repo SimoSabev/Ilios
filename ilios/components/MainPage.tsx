@@ -1,5 +1,5 @@
 import React from "react";
-import firstImage from "../public/second.jpg";
+import firstImage from "../public/16.jpg";
 import Navbar from "./Navbar";
 
 
