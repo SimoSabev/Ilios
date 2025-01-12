@@ -106,7 +106,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                       <div className="text-lg">
                         <AiFillInstagram/>
                       </div>
-                      <p>@ilios_decor</p>
+                      <p>ilios_decor</p>
                     </div>
                   </Link>
                 </li>
@@ -192,7 +192,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   <div className="text-lg">
                     <AiFillInstagram/>
                   </div>
-                  <p className="mr-2">@ilios_decor</p>
+                  <p className="mr-2">ilios_decor</p>
                 </div>
               </Link>
             </li>

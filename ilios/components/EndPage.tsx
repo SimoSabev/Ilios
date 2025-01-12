@@ -29,7 +29,7 @@ const EndPage: React.FC<EndPageProps> = ({ currentPage }) => {
           </h1>
           <div className="flex flex-col justify-center items-center gap-4 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 w-full">
             <h1 className="h-full px-20 sm:px-0 font-medium text-center text-sm md:text-base lg:text-lg xl:text-xl leading-tight tracking-tight max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
-              Projects completed during my work with Boutsen Design, Dahlgren
+              With Boutsen Design, Dahlgren
               Duck, private and corporate clients
             </h1>
           </div>
