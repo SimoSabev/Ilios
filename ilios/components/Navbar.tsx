@@ -4,7 +4,7 @@ import Link from "next/link";
 import logo from "../public/logo1.jpg";
 import link1 from "../public/linkedin.png";
 import link2 from "../public/email.png";
-import link3 from "../public/telephone.png";
+import { AiFillInstagram } from "react-icons/ai";
 
 interface NavbarProps {
   className?: string;
@@ -101,15 +101,14 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                   </div>
                 </li>
                 <li className="p-1">
-                  <div className="flex justify-start items-center gap-2">
-                    <Image
-                      src={link3.src}
-                      alt="telephone-icon"
-                      width={15}
-                      height={15}
-                    />
-                    <p>+33660051391</p>
-                  </div>
+                  <Link href="https://www.instagram.com/ilios_decor/profilecard/?igsh=ejM0dG1ucTZpc3Qz" target="__blank">
+                    <div className="flex justify-start items-center gap-2">
+                      <div className="text-lg">
+                        <AiFillInstagram/>
+                      </div>
+                      <p>@ilios_decor</p>
+                    </div>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -188,15 +187,14 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
             </li>
 
             <li className="p-1">
-              <div className="flex justify-start items-center gap-2">
-                <Image
-                  src={link3.src}
-                  alt="telephone-icon"
-                  width={15}
-                  height={15}
-                />
-                <p>+33660051391</p>
-              </div>
+              <Link href="https://www.instagram.com/ilios_decor/profilecard/?igsh=ejM0dG1ucTZpc3Qz" target="__blank">
+                <div className="flex justify-start items-center gap-1">
+                  <div className="text-lg">
+                    <AiFillInstagram/>
+                  </div>
+                  <p className="mr-2">@ilios_decor</p>
+                </div>
+              </Link>
             </li>
           </ul>
         </li>
