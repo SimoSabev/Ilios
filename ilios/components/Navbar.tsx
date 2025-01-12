@@ -97,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                       width={15}
                       height={15}
                     />
-                    <p>iliyana@iliosdecor.com</p>
+                    <p>office@iliosdecor.com</p>
                   </div>
                 </li>
                 <li className="p-1">
@@ -182,7 +182,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
                     width={15}
                     height={15}
                 />
-                iliyana@iliosdecor.com
+                office@iliosdecor.com
               </div>
             </li>
 
