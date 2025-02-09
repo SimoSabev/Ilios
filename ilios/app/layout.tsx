@@ -23,6 +23,7 @@ export const metadata: Metadata = {
       'de-DE': '/de-DE',
     },
   },
+  keywords: ["ilios", "iliana popova","ilios mirror","ilios well", "ilios photos" ,"yacht interior design", "interior design", "yacht interior project management", "interior project management", "yachts"],
 };
 
 export default function RootLayout({
